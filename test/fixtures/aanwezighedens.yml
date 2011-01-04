@@ -2,10 +2,10 @@
 
 one:
   student_id: 1
-  docent_id: 1
+  labo_id: 1
   aanwezig: 1
 
 two:
   student_id: 1
-  docent_id: 1
+  labo_id: 1
   aanwezig: 1

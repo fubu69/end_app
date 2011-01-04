@@ -10,11 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110104213309) do
+ActiveRecord::Schema.define(:version => 20110104221551) do
 
   create_table "aanwezighedens", :force => true do |t|
     t.integer  "student_id"
-    t.integer  "docent_id"
+    t.integer  "labo_id"
     t.integer  "aanwezig"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,4 +1,4 @@
 class Labo < ActiveRecord::Base
 
-validates :name, :id_docent, :presence => true
+validates :name, :docent_id, :presence => true
 end

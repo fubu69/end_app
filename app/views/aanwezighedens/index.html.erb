@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Student</th>
-    <th>Docent</th>
+    <th>Labo</th>
     <th>Aanwezig</th>
     <th></th>
     <th></th>
@@ -13,7 +13,7 @@
 <% @aanwezighedens.each do |aanwezigheden| %>
   <tr>
     <td><%= aanwezigheden.student_id %></td>
-    <td><%= aanwezigheden.docent_id %></td>
+    <td><%= aanwezigheden.labo_id %></td>
     <td><%= aanwezigheden.aanwezig %></td>
     <td><%= link_to 'Show', aanwezigheden %></td>
     <td><%= link_to 'Edit', edit_aanwezigheden_path(aanwezigheden) %></td>
