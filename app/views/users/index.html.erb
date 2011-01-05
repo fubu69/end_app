@@ -1,3 +1,13 @@
+Welkom <strong><%=session[:user_id]%></strong>.
+<%= link_to "logout",:controller => "users", :action => "logout" %>
+
+<br />
+docenten
+<%= link_to 'labos', "../labos" %>
+<%= link_to 'studenten', "../students" %>
+<%= link_to 'aanwezigheden', "../aanwezighedens" %>
+<br />
+
 <h1>Listing users</h1>
 
 <table>

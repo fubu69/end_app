@@ -1,3 +1,15 @@
+ <% if !session[:user_id] %>
+U bent niet bevoegd om deze pagina te bekijken
+<% else %>
+Welkom <strong><%=session[:user_id]%></strong>.
+<%= link_to "logout",:controller => "users", :action => "logout" %>
+<br />
+<%= link_to 'docenten', "../users" %>
+<%= link_to 'labos', "../labos" %>
+studenten
+<%= link_to 'aanwezigheden', "../aanwezighedens" %>
+<br />
+
 <h1>Listing students</h1>
 
 <table>
@@ -23,3 +35,5 @@
 <br />
 
 <%= link_to 'New Student', new_student_path %>
+
+<% end %>

@@ -1,11 +1,23 @@
 EndApp::Application.routes.draw do
   resources :aanwezighedens
 
+  get "users/login"
+
+  resources :aanwezighedens
+
+  get "aanwezighedens/login"
+
+  resources :aanwezighedens
+
   resources :labos
 
   resources :students
 
   resources :users
+  
+  match 'authenticate' => 'users'
+  match 'logout' => 'users'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,3 +1,6 @@
+Welkom <strong><%=session[:user_id]%></strong>.
+<%= link_to "logout",:controller => "users", :action => "logout" %>
+
 <h1>New user</h1>
 
 <%= render 'form' %>
